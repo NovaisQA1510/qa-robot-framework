@@ -1,0 +1,21 @@
+*** Settings ***
+Resource    ../../../resource/odonto/utils/base.resource
+
+Suite Setup        Criar sessão e Login    ${USERNAME}    ${PASSWORD}
+Suite Teardown    Encerrar sessão
+
+*** Test Cases ***
+Validação da Navegação para Configuração - Relatórios
+    [Tags]    navegacao
+    Navegação página Configuração
+    Configurar empresa    ${Empresa_1}
+    Validar empresa configurada    ${Empresa_1} 
+
+Validação da Navegação para Relatórios Utilização Indivudual - Maiores Utilizadores
+    [Tags]    navegacao
+    Navegação para Relatórios - Maiores Utilizadores 
+
+Validação da Navegação para Relatórios Utilização Indivudual - Maiores Utilizadores Do Mês
+    [Tags]    navegacao    bug
+    Navegação para Relatórios - Maiores Utilizadores Do Mês 
+

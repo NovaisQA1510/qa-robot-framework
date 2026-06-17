@@ -1,0 +1,6 @@
+robotframework==7.0.1
+robotframework-browser==18.8.1
+robotframework-pythonlibcore==4.5.0
+robotframework-assertion-engine==3.0.3
+protobuf==5.28.1
+robotframework-csvlibrary==0.0.5

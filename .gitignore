@@ -1,0 +1,18 @@
+#dir
+results
+result
+download
+
+#python
+__pycache__
+
+#env - arquivo local com credenciais reais, nunca versionar
+envs/env_local.resource
+envs/*.resource
+!envs/env_example.resource
+
+#robot framework output
+output.xml
+log.html
+report.html
+interactive_console_output.xml
